@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Users API</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section class="container">
+    <form id="user-form" class="form">
+      <input type="number" id="user-count" min="1" max="50" value="10" class="input-number">
+      <button type="submit" class="submit-button">Fetch Users</button>
+    </form>
+
+    <table class="output-table">
+      <thead>
+        <tr>
+          <th class="t-header-id">ID</th>
+          <th class="t-header-name">Name</th>
+          <th class="t-header-age">Age</th>
+          <th class="t-header-gender">Gender</th>
+          <th class="t-header-adress">Address</th>
+          <th class="t-header-email">Email</th>
+        </tr>
+      </thead>
+      <tbody id="output">
+      </tbody>
+    </table>
+  </section>
+
+  <script src="/script.js"></script>
+</body>
+</html>
